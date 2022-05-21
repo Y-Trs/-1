@@ -1,0 +1,12 @@
+@use '../settings/variables' as var;
+
+.submit {
+    @include var.sub-font(20px);
+    color: white;
+    text-align: center;
+    line-height: 59px;
+    background-color: var.$main-color;
+    width: 235px;
+    height: 59px;
+    border-radius: 51px;
+}

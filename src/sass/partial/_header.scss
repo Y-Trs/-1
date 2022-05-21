@@ -1,0 +1,30 @@
+@use '../settings/variables' as var;
+
+.header {
+    height: 75px;
+    background-color: var.$main-color;
+    padding: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include var.media-pc {
+        padding: 0 8%;
+    }
+
+    &__logo {
+        @include var.main-font(26px, 500);
+        color: white;
+        line-height: 75px;
+    }
+
+    &__menu-icon {
+        color: white;
+        font-size: 26px;
+        line-height: 75px;
+
+        @include var.media-pc() {
+            display: none;
+        }
+    }
+}

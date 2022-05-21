@@ -1,0 +1,14 @@
+@use '../settings/variables' as var;
+
+.news-cards {
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+    @include var.media-pc {
+        flex-direction: row;
+        gap: 34px;
+    }
+}

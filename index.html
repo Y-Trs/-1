@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex , nofollow">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>コーディング課題（PENGIN BLOG）</title>
+</head>
+<body style="margin: 0px;">
+    <header class="header">
+        <h1 class="header__logo header__logo--pc">クリ★スタ</h1>
+        <i class="header__menu-icon fas fa-bars"></i>
+        <nav class="menu" hidden>
+            <ul class="menu-lists menu-lists--pc">
+                <li class="menu-lists__list">About</li>
+                <li class="menu-lists__list">Service</li>
+                <li class="menu-lists__list">News</li>
+                <li class="menu-lists__list">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="top">
+        <div class="top__square">
+            <h2 class="top__msg">Create Design.</h2>
+        </div>
+    </section>
+
+    <div class="contents contents--home">
+        <section class="unit">
+            <h1 class="unit__title unit__title--about">About</h1>
+            <div class="unit-info-wrap">
+                <div class="unit-info">
+                    <div class="unit-desc-wrap">
+                        <h3 class="unit-desc-wrap__summary">ミニマルで<br>洗練されたデザインを。</h3>
+                        <p class="unit-desc-wrap__detail">
+                            近年、ミニマルなデザインが流行しています。
+                            そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。
+                            もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、
+                            課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="unit">
+            <h1 class="unit__title unit__title--service">Service</h1>
+            <div class="unit-info-wrap">
+                <div class="unit-info">
+                    <div class="unit-desc-wrap">
+                        <h3 class="unit-desc-wrap__summary">リリース時のサポートで<br>サービスのブランディングを</h3>
+                        <p class="unit-desc-wrap__detail">
+                            弊社では、リリース時もサポートさせて頂きます。
+                            プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。
+                        </p>
+                    </div>
+                    <img src="src/img/service-image@2x.jpg" alt="service1" class="unit-info__image">
+                </div>
+                <div class="unit-info">
+                    <div class="unit-desc-wrap">
+                        <h3 class="unit-desc-wrap__summary">リリース後のサポートで<br>効果を最大化させる</h3>
+                        <p class="unit-desc-wrap__detail">
+                            弊社では、リリース後もサポートさせて頂きます。
+                            サービスはリリース後に様々な課題にぶつかります。
+                            そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。
+                        </p>
+                    </div>
+                    <img src="src/img/service-image02@2x.jpg" alt="service2" class="unit-info__image">
+                </div>
+            </div>
+        </section>
+        <section class="unit">
+            <h1 class="unit__title unit__title--news">News</h1>
+            <div class="news-cards">
+                <div class="news-card news-card--first">
+                    <img src="src/img/card-image1@2x.jpg" alt="" class="news-card__image">
+                    <div class="news-card__desc">
+                        新規サイトを公開しました。
+                        今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+                    </div>
+                </div>    
+                <div class="news-card">
+                    <img src="src/img/card-image2@2x.jpg" alt="" class="news-card__image">
+                    <div class="news-card__desc">
+                        新規サイトを公開しました。
+                        今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+                    </div>
+                </div>
+                <div class="news-card">
+                     <img src="src/img/card-image3@2x.jpg" alt="" class="news-card__image">
+                    <div class="news-card__desc">
+                        新規サイトを公開しました。
+                        今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="unit unit--contact">
+            <h1 class="unit__title">お問い合わせ</h1>
+            <form class="contact-form contact-form--margin" action="post">
+                <div class="input-wrap">
+                    <p class="input-wrap__desc">担当者名</p>
+                    <input class="input-wrap__input" type="text">
+                </div>
+                <div class="input-wrap">
+                    <p class="input-wrap__desc">電話番号</p>
+                    <input class="input-wrap__input" type="text">
+                </div>
+                <div class="input-wrap">
+                    <p class="input-wrap__desc">メールアドレス</p>
+                    <input class="input-wrap__input" type="email">
+                </div>
+                <div class="input-wrap">
+                    <p class="input-wrap__desc">お問い合わせ内容</p>
+                    <textarea class="input-wrap__textarea" name="contact" id="contact"></textarea>
+                </div>
+                <div class="submit">送信</div>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        ©︎crest.design all rights reserved
+    </footer>
+</body>
+<script>
+    (function(d) {
+      var config = {
+        kitId: 'cwb7ask',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</html>

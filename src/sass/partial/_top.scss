@@ -1,0 +1,43 @@
+@use '../settings/variables' as var;
+
+.top {
+    background-image: url("../img/fv-bgi_sp@2x.jpg");
+    height: 590px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include var.media-pc {
+        background-image: url('../img/fv-bgi@2x.jpg');
+        height: 740px;
+    }
+
+    &__square {
+        width: 300px;
+        height: 100px;
+        border: solid white 2px;
+
+        @include var.media-pc {
+            width: 449px;
+            height: 136px
+        }
+    }
+
+    &__msg {
+        @include var.main-font(30px, 500);
+        color: white;
+        height: 40px;
+        width: 219px;
+        text-align: center;
+        line-height: 104px;
+        margin: 0 auto;
+
+        @include var.media-pc {
+            @include var.main-font(50px, 500);
+            width: 365px;
+            height: 67px;
+            line-height: 136px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@use '../settings/variables' as var;
+
+.news-card {
+    text-align: center;
+    border: solid #141414 1px ;
+    box-shadow: 1px 2px 2px rgba(27, 19, 16, 0.4), -1px 0 2px rgba(27, 19, 16, 0.4);
+
+    &__image {
+        width: 100%;
+    }
+
+    &__desc {
+        padding: 25px 33px;
+        @include var.sub-font(13px);
+        color: var.$main-font-color;
+        line-height: 25px;
+    }
+}

@@ -1,0 +1,15 @@
+@use '../settings/variables' as var;
+
+.footer {
+    @include var.main-font(14px);
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    background-color: var.$main-color;
+    height: 60px;
+    margin-top: 50px;
+
+    @include var.media-pc {
+        height: 73px;
+    }
+}

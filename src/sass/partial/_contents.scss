@@ -1,0 +1,18 @@
+@use '../settings/variables' as var;
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+    padding:0 2%;
+
+    @include var.media-pc {
+        padding: 0 14%;
+    }
+
+    &--home {
+        margin-top: 100px;
+    }
+}

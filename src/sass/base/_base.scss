@@ -1,0 +1,5 @@
+@use '../settings/variables' as var;
+
+html {
+    color: var.$main-font-color;
+}

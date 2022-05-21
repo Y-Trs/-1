@@ -1,0 +1,12 @@
+@use '../settings/variables' as var;
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+    &--margin {
+        margin-top: 70px;
+    }
+}

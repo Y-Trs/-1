@@ -1,0 +1,40 @@
+@use '../settings/variables' as var;
+
+.unit {
+    &__title {
+        @include var.main-font(36px);
+        margin: 0 auto;
+        text-align: center;
+
+        &--about {
+            margin-bottom: 32px;
+
+            @include var.media-pc {
+                margin-top: 73px;
+            }
+        }
+
+        &--service {
+            margin-bottom: 72px;
+
+            @include var.media-pc {
+                margin-top: 70px;
+            }
+        }
+
+        &--news {
+            margin-bottom: 70px;
+
+            @include var.media-pc {
+                margin-top: 70px;
+            }
+        }
+    }
+
+    &--contact {
+        width: 100%;
+        @include var.media-pc {
+            width: 48%;
+        }
+    }
+}

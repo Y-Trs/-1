@@ -1,0 +1,19 @@
+@use '../settings/variables' as var;
+
+.unit-info {
+    @include var.media-pc {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 7%;
+    }
+
+    &__image {
+        width: 100%;
+        margin-top: 40px;
+
+        @include var.media-pc {
+            width: auto;
+            margin-top: 0;
+        }
+    }
+}

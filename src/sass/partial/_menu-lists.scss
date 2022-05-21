@@ -1,0 +1,17 @@
+@use '../settings/variables' as var;
+
+.menu-lists {
+    @include var.media-pc() {
+        display: flex;
+        justify-content: center;
+        gap: 55px;
+        width: 367px;
+        height: 21px;
+
+        &__list {
+            @include var.main-font(16px, 500);
+            color: white;
+            list-style: none;
+        }
+    }
+}

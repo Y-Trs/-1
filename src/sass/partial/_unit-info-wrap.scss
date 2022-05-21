@@ -1,0 +1,8 @@
+@use '../settings/variables' as var;
+
+.unit-info-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+}
