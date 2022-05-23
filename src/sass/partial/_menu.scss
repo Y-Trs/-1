@@ -1,6 +1,7 @@
 @use '../settings/variables' as var;
 
 .menu {
+    display: none;
     @include var.media-pc {
         display: inline-block;
         line-height: 75px;
